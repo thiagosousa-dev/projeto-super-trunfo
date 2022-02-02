@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,300;0,500;0,600;0,700;0,900;1,600&display=swap') ;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fafafa;
+  font-family: Epilogue , sans-serif;
+}
+
+header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  height: 100vh;
+  justify-content: center;
+}
+
+.logo {
+  background-image: url('../images/trunfo.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 350px;
+  width: 350px;
+}
+
+.links {
+  display: flex;
+  gap: 1rem;
+}
+
+.links a {
+  align-items: center;
+  border: 2px solid #036b52;
+  border-radius: 3px;
+  color: #036b52;
+  display: flex;
+  height: 3rem;
+  justify-content: center;
+  text-decoration: none;
+  transition: 0.3s;
+  width: 10rem;
+}
+
+.links a:hover {
+  background-color: #036b52;
+  color: white;
+}
+
+.main-container {
+  display: flex;
+}
+
+.form-container {
+  align-items: center;
+  display: flex;
+  flex-basis: 50%;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+}
+
+h1, h2, h3, p, ul {
+  margin: 1.5rem 0;
+}
+
+form {
+  width: 350px;
+}
+
+input, textarea, select {
+  background-color: white;
+  border: none;
+  border-bottom: 1px solid #023031;
+  height: 37px;
+  padding: 10px;
+  width: 100%;
+}
+
+label {
+  color: #3d495c;
+  display: inline-block;
+  font-family: Epilogue , sans-serif;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  position: relative;
+  width: 100%;
+}
+
+.description-input {
+  height: 80px;
+}
+
+.attr-container {
+  align-items: center;
+  display: flex;
+  gap: 1.2rem;
+  justify-content: space-between;
+}
+
+.attr-wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.attr1-input, .attr2-input, .attr3-input {
+  border: 1px solid #023031;
+  border-radius: 2px;
+  width: 100px;
+}
+
+.icon-wrapper {
+  background-color: #023031;
+  border-radius: 2px;
+  display: flex;
+  height: 37px;
+  width: 100%;
+}
+
+.icon-wrapper div {
+  align-items: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  width: 45px;
+}
+
+.image-input {
+  border: 1px solid #023031;
+  border-radius: 2px;
+  width: 100%;
+}
+
+.trunfo-wrapper {
+  align-items: center;
+  display: flex;
+  gap: 0.5rem;
+  height: 25px;
+}
+
+.trunfo-input {
+  background-color: #036b52;
+  height: 16px;
+  width: 16px;
+}
+
+.save-button {
+  background-color: #036b52;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  height: 40px;
+  margin-top: 3rem;
+  width: 115px;
+}
+
+.save-button:disabled {
+  cursor: auto;
+  opacity: 0.5;
+}
+
+.card-container {
+  align-items: center;
+  background-color: #023031;
+  border-radius: 15rem 0 0 15rem;
+  display: flex;
+  flex-basis: 50%;
+  justify-content: center;
+  padding: 10px;
+}
+
+.card-wrapper {
+  background-image: url('../images/Group\ 235.svg');
+  background-repeat: no-repeat;
+  height: 560px;
+  position: relative;
+  width: 380px;
+}
+
+.name-card {
+  color: white;
+  font-family: Epilogue , sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  position: absolute;
+  right: 12%;
+  top: 3%;
+}
+
+.image-card {
+  clip-path: polygon(0 0, 100% 0, 100% 200px, 0% 100%);
+  height: 238px;
+  left: 32px;
+  margin-top: 8px;
+  object-fit: cover;
+  position: absolute;
+  top: 64px;
+  width: 317px;
+}
+
+.description-card {
+  color: white;
+  font-family: Epilogue , sans-serif;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 300;
+  height: 147px;
+  left: 12%;
+  line-height: 13px;
+  position: absolute;
+  top: 49.4%;
+  transform: rotate(-6.8deg);
+  width: 317px;
+}
+
+.atribute-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  left: 15%;
+  position: absolute;
+  top: 66.2%;
+  width: 284px;
+}
+
+.atribute-wrapper {
+  display: flex;
+  font-family: Epilogue , sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  height: 30px;
+  justify-content: space-around;
+  width: 280px;
+}
+
+.attr-title {
+  color: #3d495c;
+  margin-left: 0.8rem;
+}
+
+.attr-number {
+  color: white;
+  height: 30.74px;
+  text-align: center;
+  width: 48px;
+}
+
+.rare-card {
+  color: #3d495c;
+  font-family: Epilogue , sans-serif;
+  font-size: 15px;
+  font-weight: 900;
+  position: absolute;
+  right: 13%;
+  text-transform: uppercase;
+  top: 59%;
+}
+
+.trunfo-card {
+  background-image: url('../images/trunfo.svg');
+  height: 72px;
+  position: absolute;
+  right: 12%;
+  top: 35%;
+  visibility: visible;
+  width: 72px;
+  z-index: 10;
+}
+
+.trunfo-card p {
+  visibility: hidden;
+}
+
+.cards-display {
+  background-color: #fafafa;
+  padding-top: 4rem;
+  text-align: center;
+}
+
+.all-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  padding: 3rem 0;
+}
+
+.card-btn {
+  margin-bottom: 3rem;
+}
+
+.btn-delete {
+  background-color: white;
+  border: 2px solid #036b52;
+  border-radius: 5px;
+  color: #036b52;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 1rem;
+  padding: 0.8rem 2rem;
+  transition: 0.3s;
+}
+
+.btn-delete:hover {
+  background-color: #036b52;
+  color: white;
+}
+
+.searchBar {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 0 10px;
+  text-align: center;
+}
+
+
+.trunfo-filter {
+  align-items: center;
+  display: flex;
+  gap: 0.5rem;
+  height: 20px;
+  margin-top: 1.5rem;
+
+}
+
+.trunfo-filter-input {
+  height: 16px;
+  width: 16px;
+}
+
+.play-display {
+  background-color: #023031;
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.play-display h1 {
+  color: white;
+  text-align: center;
+}
+
+.random-btn, .play-btn, .next-btn {
+  background-color: #036b52;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  height: 40px;
+  margin-left: 10px;
+  width: 125px;
+}
+
+.random-btn:disabled, .play-btn:disabled, .next-btn:disabled {
+  cursor: auto;
+  opacity: 0.5;
+}
+
+.score {
+  color: white;
+  line-height: 1px;
+}
+
+.score-display {
+  color: white;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.result-display {
+  color: white;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.fight-section {
+  align-items: center;
+  display: flex;
+  gap: 7rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.card-player {
+  position: relative;
+}
+
+.player-name {
+  color: white;
+  font-weight: 900;
+}
+
+.radio-div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  left: 14%;
+  position: absolute;
+  top: 62.7%;
+  width: 284px;
+}
+
+.radio-input {
+  height: 16px;
+  width: 16px;
+}
+
+.machine-wrapper {
+  align-items: center;
+  display: flex;
+  gap: 7rem;
+  justify-content: space-between;
+}
+
+footer {
+  color: #3d495c;
+  padding: 15px;
+  text-align: center;
+}

@@ -1,5 +1,6 @@
 # Projeto-super-trunfo
 
+<img src="https://github.com/tryber/sd-018-b-project-tryunfo/raw/master/images/requisito-4.png"/>
 
 ## 💻 Projeto
 
